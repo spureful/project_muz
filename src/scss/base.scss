@@ -1,0 +1,33 @@
+html, body {
+	width: 100%;
+	min-height: 100%;
+	
+	
+}
+.wrapper {
+	width: 100%;
+	min-width: 320px;
+	margin: 0 auto;
+}
+
+.container {
+	width: 95%;
+	margin: 0 auto;
+}
+
+.main-title{
+	font-family: prata, "Times New Roman", serif;
+	font-size: rem(30px);
+	color: #021a23;
+}
+
+.content-title{
+	font-family: 'pt_sans', arial, sans-serif;
+	font-size: rem(16px);
+	color: #fff;
+}
+
+.content-title_bold {
+	@extend .content-title;
+	font-weight: 700;
+}

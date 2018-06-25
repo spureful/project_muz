@@ -1,0 +1,11 @@
+.promo {
+	background-image: url(../img/promo_bg.jpg) center no-repeat;
+	background-size: cover;
+	
+	display: flex;
+	flex-direction: column;
+}
+
+.promo__content {
+	flex: 1;
+}

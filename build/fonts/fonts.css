@@ -1,0 +1,36 @@
+
+
+
+
+@font-face {
+    font-family: 'prata';
+    src: url('prata-regular.woff2') format('woff2'),
+         url('prata-regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'pt_sans';
+    src: url('pt_sans-bold.woff2') format('woff2'),
+         url('pt_sans-bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'pt_sans';
+    src: url('pt_sans-regular.woff2') format('woff2'),
+         url('pt_sans-regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
