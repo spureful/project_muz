@@ -1,0 +1,28 @@
+.footer {
+	display: none;
+	margin-bottom: 50px;
+	
+	@include dtop {
+		display: block;
+	}
+	
+	.menu__link {
+		font-size: rem(12px);
+		text-transform: uppercase;
+		color: #021a23;
+		
+		&:hover {
+			color: #eec643;
+		}
+	}
+}
+
+.footer__row {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}

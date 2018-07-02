@@ -1,0 +1,22 @@
+.main-title {
+	@include dtop {
+		font-size: rem(50px);
+	}
+	
+
+}
+
+.content-title {
+	@include dtop {
+		font-size: rem(20px);
+	}
+	
+	
+}
+
+.content-title_bold {
+	@include dtop {
+		font-size: rem(30px);
+		font-weight: 700;
+	}
+}

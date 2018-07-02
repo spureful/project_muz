@@ -1,8 +1,14 @@
 section.promo
-	include header.pug
-	.promo__content
-		h1.main-title.main-title_promo Школа музыкального искусства
-		h2.content-title Научим петь, играть на инструментах, получать удовольствие от музыки и не бояться сцены
-		
-	.promo__link
-		a.promo__link-text вводный урок
+	.container
+		include header.pug
+		.promo__block
+			.promo__content
+				h1.main-title.main-title_promo Школа музыкального искусства
+				h1.main-title.main-title_promo-desktop Diez — школа музыкального искусства
+				h2.content-title.content-title_promo Научим петь, играть на инструментах, получать удовольствие от музыки и не бояться сцены
+
+			.promo__link
+				a.promo__link-text.content-title(href="#") вводный урок
+			.promo__lesson-form
+				include promolesson-form.pug
+				

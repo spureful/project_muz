@@ -1,33 +1,54 @@
-html, body {
-	width: 100%;
+html,
+body {
+	min-width: 100%;
 	min-height: 100%;
-	
-	
+
+
 }
+
 .wrapper {
-	width: 100%;
+
 	min-width: 320px;
+	width: 100%;
 	margin: 0 auto;
 }
 
 .container {
-	width: 95%;
+	width: 93%;
 	margin: 0 auto;
+
+//	overflow: hidden;
 }
 
-.main-title{
+.main-title {
 	font-family: prata, "Times New Roman", serif;
 	font-size: rem(30px);
 	color: #021a23;
+	margin: 0;
+	line-height: 1;
+	
+
 }
 
-.content-title{
+.content-title {
 	font-family: 'pt_sans', arial, sans-serif;
 	font-size: rem(16px);
 	color: #fff;
+	
+	
 }
 
 .content-title_bold {
 	@extend .content-title;
 	font-weight: 700;
 }
+
+.container-title {
+	border-bottom: 2px solid #eec643;
+	border-top: 2px solid #eec643;
+	width: 70%;
+	padding: 3px 15px;
+
+}
+
+

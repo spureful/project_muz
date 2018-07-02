@@ -1,3 +1,15 @@
 @function rem($px){
 	@return $px/16px + 0rem;
+};
+
+@mixin tablet {
+	@media (min-width: 945px) {
+		@content;
+	}
+}
+
+@mixin dtop {
+	@media (min-width: 1280px) {
+		@content;
+	}
 }

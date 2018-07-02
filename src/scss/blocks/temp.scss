@@ -1,0 +1,178 @@
+.temp {
+	margin-bottom: 33px;
+	@include dtop {
+		margin-bottom: 80px;
+	}
+}
+
+.container__temp {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-direction: column;
+
+	@include dtop {
+		flex-direction: row; //		flex-wrap: wrap;
+//		height: 100%;
+		align-items: stretch;
+		
+	}
+
+}
+
+.temp__item_column {
+	@include dtop {
+
+//		height: 100%;
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		flex-wrap: wrap;
+		margin-right: 30px;
+
+	}
+}
+
+.temp__title {
+	margin-bottom: 15px;
+
+	@include dtop {
+		width: 100%;
+		height: 10%;
+		white-space: nowrap;
+		margin-right: 30px;
+
+	}
+}
+
+
+.temp__item {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	margin-bottom: 16px;
+	height: 33%;
+
+	&:last-child {
+		margin-bottom: 0;
+
+	}
+
+	@include dtop {
+		width: 50%;
+		height: 100%;
+	}
+}
+
+.temp__item-uprow {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-direction: column;
+
+	@include dtop {
+		flex-direction: row;
+	justify-content: space-between;
+		height: 100%;
+		width: 100%;
+	
+	}
+}
+
+.temp__block {
+	@extend .growup-music__block;
+
+	@include dtop {
+		min-height: 495px;
+		height: 100%;
+		width: 50%;
+//		margin-right: 30px;
+		margin-bottom: 0;
+
+	}
+}
+
+.temp__block-title {
+	@extend .growup-music__block-title
+}
+
+.temp__text {
+	padding-left: 10px;
+	padding-bottom: 20%;
+	width: 60%;
+}
+
+.temp__block_composition {
+	background-image: url(../img/temp/temp_compostion.jpg);
+}
+
+.temp__block_result {
+	background-image: url(../img/temp/temp_result.jpg);
+
+
+}
+
+.temp__item-row {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+
+
+	@include dtop {
+		align-items: stretch;
+		height: 100%;
+	}
+}
+
+.temp__block_studio {
+	background-image: url(../img/temp/temp_studio.jpg);
+	width: 80%;
+	margin-right: 10px;
+	margin-bottom: 0;
+
+	@include dtop {
+		width: 50%;
+		margin-right: 30px;
+		min-height: 570px;
+		//		height: 100%;
+	}
+}
+
+.temp__lesson {
+	background-color: #eec643;
+	width: 20%;
+	text-transform: uppercase;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+	padding-bottom: 25px;
+
+	@include dtop {
+		display: none;
+	}
+}
+
+.temp__lesson-text {
+	color: #fff;
+	transform: rotate(-90deg);
+	margin-bottom: 30px;
+}
+
+.temp__promolesson {
+	@include dtop {
+		width: 50%;
+
+	}
+}
