@@ -82,6 +82,8 @@
 	display: -ms-flex;
 	display: -o-flex;
 	display: flex;
+	width: 288px;
+	margin: 0 auto;
 	justify-content: center;
 	align-items: center;
 	
@@ -94,6 +96,7 @@
 	text-transform: uppercase;
 	padding: 23px 0;
 	text-align: center;
+	text-decoration: none;
 }
 
 .contacts_form {

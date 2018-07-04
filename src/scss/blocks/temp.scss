@@ -17,7 +17,8 @@
 	@include dtop {
 		flex-direction: row; 
 	overflow: hidden;
-		
+		height: 566px;
+//		height: 100%;
 		
 	}
 
@@ -138,7 +139,7 @@ margin-bottom: 0;
 
 
 	@include dtop {
-
+height: 100%;
 	
 	}
 }
@@ -152,7 +153,7 @@ margin-bottom: 0;
 	@include dtop {
 		width: 50%;
 		margin-right: 30px;
-	min-height: 566px;
+	min-height: 580px;
 		height: 100%;
 				
 	}
