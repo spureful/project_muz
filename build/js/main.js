@@ -85,13 +85,16 @@ openMenu();
 function slider() {
 $(window).on("resize", function() {
 	console.log(screen.width);
-	if (screen.width < 1280) {
+	
+	if (screen.width <= 1280) {
+		$(".inschool__slider").addClass("slider-plugin");
 		
-		$(".inschool__slider").slick({});
 	}
 	else {
-		$(".inschool__slider").slick("unslick");
+		$(".inschool__slider").removeClass("slider-plugin");
 	}
+	
+	$(".slider-plugin").slick({});
 });
 }
 
