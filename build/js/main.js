@@ -2,7 +2,7 @@
 ymaps.ready(init);
 
 var placemarks = [
-	
+
 	{
 		latitude: 59.94,
 		longitude: 30.25,
@@ -41,18 +41,18 @@ function init() {
 
 
 	var clusterer = new ymaps.Clusterer({
-       clusterIcons: [{
-		href: 'img/meeting_screen/burger.png',
-		size: [100, 100],
-		offsset: [-50, -50]
+		clusterIcons: [{
+			href: 'img/meeting_screen/burger.png',
+			size: [100, 100],
+			offsset: [-50, -50]
 	}],
 		clusterIconContentLayout: null
 
 
 	});
-	
+
 	map.geoObjects.add(clusterer);
-//	map.geoObjects.add(placemark);
+	//	map.geoObjects.add(placemark);
 	clusterer.add(geoObjects);
 
 }
@@ -64,52 +64,63 @@ function openMenu() {
 	const openBtn = document.querySelector(".menu__hamburger");
 	const closeBtn = document.querySelector(".openmenu__closebtn");
 	const menu = document.querySelector(".openmenu");
-	
-	openBtn.addEventListener("click", function() {
+
+	openBtn.addEventListener("click", function () {
 		menu.style.display = "flex";
-		
-		
+
+
 	});
-	
-	closeBtn.addEventListener("click", function() {
+
+	closeBtn.addEventListener("click", function () {
 		menu.style.display = "none";
-		
-		
+
+
 	});
-	}
+}
 
 openMenu();
 
 /// SLIDER////
 
 function slider() {
-$(window).on("resize", function() {
-	console.log(screen.width);
-	
-	if (screen.width <= 1280) {
-		$(".inschool__slider").addClass("slider-plugin");
-		
-	}
-	else {
-		$(".inschool__slider").removeClass("slider-plugin");
-	}
-	
-	$(".slider-plugin").slick({});
-});
+
+	//	$(".slider-plugin").slick({
+	//		responsive: [
+	//			
+	//
+	//			{
+	//				breakpoint: 1280,
+	//				settings: {
+	//					settings: "unslick"
+	//				}
+	//			}
+	//]
+	//	});
+	$(window).on("resize", function () {
+		console.log(window.innerWidth);
+
+		if (window.innerWidth > 1280) {
+
+			$(".inschool__slider").slick("unslick");
+		} else {
+			$(".inschool__slider").slick();
+		}
+
+
+	});
 }
 
 slider();
 
 function selectCustom() {
-	var selectEl = document.getElementById( 'select_yellow' );
-multi( selectEl ), {
-    'enable_search': true,
-    'search_placeholder': 'Search...',
-    'non_selected_header': null,
-    'selected_header': null
-};
-	
+	var selectEl = document.getElementById('select_yellow');
+	multi(selectEl), {
+		'enable_search': true,
+		'search_placeholder': 'Search...',
+		'non_selected_header': null,
+		'selected_header': null
+	};
+
 }
 
 selectCustom();
-
