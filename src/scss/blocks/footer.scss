@@ -26,3 +26,13 @@
 	justify-content: space-between;
 	align-items: center;
 }
+
+.footer__menu {
+	.menu__item{
+		margin-right: 45px;
+		
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+}

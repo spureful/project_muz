@@ -1,6 +1,9 @@
 .header {
 	padding-top: rem(23px);
 	margin-bottom: rem(85px);
+	@include dtop {
+		padding-top: 47px;
+	}
 }
 
 .header__row {
@@ -14,9 +17,14 @@
 
 .logo-text {
 	color: #eec643;
+	@include dtop {
+		font-size: 30px;
+	}
 }
 
 .menu__hamburger {
+	width: 24px;
+	height: 24px;
 	border: none;
 	background-color: transparent;
 	position: relative;

@@ -45,14 +45,8 @@
 	position: relative;
 }
 	.openmenu__closebtn-item {
-		width: 2px;
-		height: 18px;
-		background-color: #fff;
-		position: absolute;
-		top: 0;
-		left: 0%;
-		transform: rotate(45deg);
-	&:before {
+
+	&:before, &:after {
 		content: '';
 		display: block;
 		width: 2px;
@@ -61,11 +55,17 @@
 
 		position: absolute;
 		top: 0;
-		left: 50%;
-		
-		transform: rotate(90deg);
+	left: 0;
+			
 	}
 
+		&:before {
+				transform: rotate(45deg);
+		}	
+		
+		&:after {
+				transform: rotate(-45deg);
+		}
 
 }
 

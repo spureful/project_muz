@@ -2,6 +2,7 @@
 	background-image: url(../img/promo/promo_bg.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
+	background-position: center;
 
 	display: flex;
 	flex-direction: column;
@@ -14,7 +15,7 @@
 	margin-bottom: 25px;
 
 	@include dtop {
-		margin-bottom: 95px;
+		margin-bottom: 90px;
 	}
 
 }
@@ -96,6 +97,7 @@
 
 .promo__lesson-form {
 	@include dtop {
-	margin-bottom: 145px;
+		margin-top: 40px;
+	margin-bottom: 150px;
 	}
 }

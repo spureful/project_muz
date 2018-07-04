@@ -79,4 +79,34 @@ function openMenu() {
 	}
 
 openMenu();
+
+/// SLIDER////
+
+function slider() {
+$(window).on("resize", function() {
+	console.log(screen.width);
+	if (screen.width < 1280) {
+		
+		$(".inschool__slider").slick({});
+	}
+	else {
+		$(".inschool__slider").slick("unslick");
+	}
+});
+}
+
+slider();
+
+function selectCustom() {
+	var selectEl = document.getElementById( 'select_yellow' );
+multi( selectEl ), {
+    'enable_search': true,
+    'search_placeholder': 'Search...',
+    'non_selected_header': null,
+    'selected_header': null
+};
 	
+}
+
+selectCustom();
+

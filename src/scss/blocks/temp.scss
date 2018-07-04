@@ -2,6 +2,7 @@
 	margin-bottom: 33px;
 	@include dtop {
 		margin-bottom: 80px;
+	
 	}
 }
 
@@ -14,28 +15,15 @@
 	flex-direction: column;
 
 	@include dtop {
-		flex-direction: row; //		flex-wrap: wrap;
-//		height: 100%;
-		align-items: stretch;
+		flex-direction: row; 
+	overflow: hidden;
+		
 		
 	}
 
 }
 
-.temp__item_column {
-	@include dtop {
 
-//		height: 100%;
-		display: -webkit-flex;
-		display: -moz-flex;
-		display: -ms-flex;
-		display: -o-flex;
-		display: flex;
-		flex-wrap: wrap;
-		margin-right: 30px;
-
-	}
-}
 
 .temp__title {
 	margin-bottom: 15px;
@@ -45,10 +33,16 @@
 		height: 10%;
 		white-space: nowrap;
 		margin-right: 30px;
+		margin-bottom:5%;
 
 	}
 }
 
+.main-title_temp {
+	@include dtop {
+		padding-left: 25px;
+	}
+}
 
 .temp__item {
 	margin: 0;
@@ -68,6 +62,21 @@
 	}
 }
 
+.temp__item_column {
+	@include dtop {
+
+
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		flex-wrap: wrap;
+		margin-right: 30px;
+margin-bottom: 0;
+	}
+}
+
 .temp__item-uprow {
 	display: -webkit-flex;
 	display: -moz-flex;
@@ -79,7 +88,7 @@
 	@include dtop {
 		flex-direction: row;
 	justify-content: space-between;
-		height: 100%;
+		height: 85%;
 		width: 100%;
 	
 	}
@@ -89,10 +98,10 @@
 	@extend .growup-music__block;
 
 	@include dtop {
-		min-height: 495px;
+		min-height: 473px;
 		height: 100%;
 		width: 50%;
-//		margin-right: 30px;
+
 		margin-bottom: 0;
 
 	}
@@ -114,7 +123,9 @@
 
 .temp__block_result {
 	background-image: url(../img/temp/temp_result.jpg);
-
+	@include dtop {
+		margin-right: 0;
+	}
 
 }
 
@@ -127,8 +138,8 @@
 
 
 	@include dtop {
-		align-items: stretch;
-		height: 100%;
+
+	
 	}
 }
 
@@ -141,8 +152,9 @@
 	@include dtop {
 		width: 50%;
 		margin-right: 30px;
-		min-height: 570px;
-		//		height: 100%;
+	min-height: 566px;
+		height: 100%;
+				
 	}
 }
 
